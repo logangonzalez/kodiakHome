@@ -1,14 +1,25 @@
 # Scripts
 
-Personal shell-script collection (repo name on disk: `Scripts`, README title: `kodiakHome`). Treat each top-level file as a standalone utility — no shared library, no build step.
+Personal scripts collection. GitHub repo: `kodiakHome`. Local path: `~/Repos/kodiakHome/`. Each file under `scripts/<language>/` is standalone — no shared library, no build step.
+
+## Repository layout
+
+```
+kodiakHome/
+├── README.md
+├── CLAUDE.md
+└── scripts/
+    ├── bash/
+    └── python/
+```
 
 ## Scripts inventory
 
 | Script | Purpose |
 |---|---|
-| `bigBen.sh` | Interactive clock-watcher. Prompts for clock-in / clock-out times (12h or 24h), then live-counts down remaining time until clock-out. |
+| `scripts/bash/bigBen.sh` | Interactive clock-watcher. Prompts for clock-in / clock-out times (12h or 24h), then live-counts down remaining time until clock-out. |
 
-When adding a new script, append a row here in the same commit.
+When adding a new script, place it under `scripts/bash/` or `scripts/python/` and append a row here in the same commit.
 
 ## Conventions
 
@@ -35,6 +46,11 @@ Newest entries on top. Format:
 ```
 
 ---
+
+### 2026-05-11 — Reorganize into `scripts/{bash,python}/`; rename local dir to `kodiakHome`
+- **What:** Moved `bigBen.sh` into `scripts/bash/`, added empty `scripts/python/` (with `.gitkeep`). Expanded `README.md` with a repo-layout tree. Updated inventory paths in `CLAUDE.md`. Locally renamed `~/Scripts` → `~/Repos/kodiakHome` so the on-disk name matches the GitHub repo.
+- **Why:** Cleaner browsing in the Fresh TUI editor; grouping by language scales as more scripts are added; the `~/Repos/` parent leaves room for other repos alongside this one.
+- **Files:** `README.md`, `CLAUDE.md`, `scripts/bash/bigBen.sh`, `scripts/python/.gitkeep`
 
 ### 2026-05-11 — Add CLAUDE.md
 - **What:** Initial CLAUDE.md with scripts inventory, conventions, and dev-journal template.
