@@ -8,6 +8,7 @@ Personal scripts collection. GitHub repo: `kodiakHome`. Local path: `~/Repos/kod
 kodiakHome/
 ├── README.md
 ├── CLAUDE.md
+├── ANTHROPIC_TOS.md    ← acknowledgment of Anthropic's terms
 └── scripts/
     ├── bash/
     └── python/
@@ -46,6 +47,11 @@ Newest entries on top. Format:
 ```
 
 ---
+
+### 2026-05-11 — Add `ANTHROPIC_TOS.md`
+- **What:** Added a repo-root acknowledgment of Anthropic's Consumer/Commercial Terms, Usage Policy, and Privacy Policy (hyperlinked, with a non-authoritative summary). Updated `README.md` and `CLAUDE.md` layout trees to include the file.
+- **Why:** Code in this repo is Claude-assisted; keeping an explicit acknowledgment on record makes the relationship to Anthropic's terms unambiguous for anyone reading the repo.
+- **Files:** `ANTHROPIC_TOS.md`, `README.md`, `CLAUDE.md`
 
 ### 2026-05-11 — Reorganize into `scripts/{bash,python}/`; rename local dir to `kodiakHome`
 - **What:** Moved `bigBen.sh` into `scripts/bash/`, added empty `scripts/python/` (with `.gitkeep`). Expanded `README.md` with a repo-layout tree. Updated inventory paths in `CLAUDE.md`. Locally renamed `~/Scripts` → `~/Repos/kodiakHome` so the on-disk name matches the GitHub repo.
