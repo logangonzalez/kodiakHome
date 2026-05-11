@@ -9,6 +9,8 @@ kodiakHome/
 ├── README.md           — overview (this file)
 ├── CLAUDE.md           — project notes and dev journal
 ├── ANTHROPIC_TOS.md    — acknowledgment of Anthropic's terms (Claude-assisted code)
+├── LICENSE             — MIT
+├── .gitignore
 └── scripts/
     ├── bash/           — shell scripts
     └── python/         — python scripts
